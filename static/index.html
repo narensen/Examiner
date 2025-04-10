@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📄 Chat with PDF</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container fade-in">
+    <h1 class="heading slide-in-top">📄 Chat with PDF using LLaMA 4</h1>
+
+    <div class="upload-section pop-in">
+      <h2>Step 1: Upload PDF(s)</h2>
+      <input type="file" id="pdfUpload" multiple>
+      <button onclick="uploadPDFs()">Upload PDFs</button>
+      <p id="uploadStatus"></p>
+    </div>
+
+    <div class="query-section fade-up">
+      <h2>Step 2: Ask a Question</h2>
+      <input type="text" id="queryInput" placeholder="Ask your PDF..." />
+      <button onclick="sendQuery()">Ask</button>
+    </div>
+
+    <div id="answerBox" class="answer slide-in-bottom"></div>
+  </div>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>

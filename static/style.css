@@ -1,0 +1,77 @@
+/* Reset */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #fefefe;
+    color: #222;
+    padding: 2rem;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  input, button {
+    padding: 0.75rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  button {
+    background: #1e40af;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #3b82f6;
+  }
+  
+  #answerBox {
+    background: #f1f5f9;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; } to { opacity: 1; }
+  }
+  @keyframes slideInTop {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes slideInBottom {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes fadeUp {
+    from { transform: translateY(10px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes popIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  .fade-in { animation: fadeIn 1s ease forwards; }
+  .slide-in-top { animation: slideInTop 0.8s ease forwards; }
+  .slide-in-bottom { animation: slideInBottom 0.8s ease forwards; }
+  .fade-up { animation: fadeUp 1s ease forwards; }
+  .pop-in { animation: popIn 1s ease forwards; }
+  
+  /* Headings */
+  h1, h2 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
