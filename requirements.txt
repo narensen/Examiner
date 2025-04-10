@@ -1,6 +1,6 @@
-streamlit
-requests
-python-dotenv
-PyPDF2
-langchain
-faiss-cpu
+fastapi==0.115.12
+groq==0.22.0
+langchain==0.3.23
+langchain_community==0.3.21
+PyPDF2==3.0.1
+sentence_transformers==4.0.2
